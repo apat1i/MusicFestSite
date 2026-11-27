@@ -55,8 +55,14 @@
     font-family: monospace;
     color: white;
 }
+.main p {
+    font-size: 22px;
+}
 .main h4 {
-    font-size: 28px;
+    font-size: 22px;
+}
+.main h3 {
+    font-size: 22px;
 }
 
 
@@ -466,7 +472,7 @@
     width: 25%;
     height: 60%;
 
-    margin-top: 6vh;
+    margin-top: 11%;
     margin-left: 5%;
 
     padding-left: 5%;
@@ -522,6 +528,8 @@
 
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 20px;
+
+    padding: 1%;
 }
 #scheduleList {
     font-size: 24px;
@@ -601,6 +609,8 @@
 
     margin-left: auto;
     margin-right: auto;
+
+    font-size: 16px;
 }
 .artistButt:hover {
     background-color: darkorchid;
@@ -647,7 +657,7 @@
 
 #artPhoto {
     width: auto;
-    height: 25%;
+    height: 40%;
 
     
 
@@ -679,7 +689,7 @@
 
 @media (max-width: 800px) {
     #artistFrame {
-        height: 150vh;
+        height: 180vh;
     }
     .hdrTitle {
         margin-top: 12vh;
