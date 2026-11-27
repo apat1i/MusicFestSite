@@ -1,0 +1,1050 @@
+.body {
+    margin: 0;
+}
+
+
+.hdr {
+    display: flex;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    mix-blend-mode: difference;
+
+    width: 100%;
+    height: 12vh;
+    background-color: rgba(0, 0, 0, 0);
+}
+.hdrItem{
+    margin: auto;
+    fill: darkorchid;
+    color: darkorchid;
+}
+
+
+
+#hdrLogo {
+    width: 30px;
+    height: auto;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+#startDate{
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+#langButt {
+    margin-right: 1vw;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+#hdrMenuButt {
+    width: 30px;
+    height: auto;
+    margin-right: 3vw;
+    margin-left: 2vw;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+
+    font-family: monospace;
+    color: white;
+}
+.main p {
+    font-size: 24px;
+}
+
+
+
+.butt {
+    display: flex;
+
+    width: fit-content;
+    height: 5vh;
+
+    align-items: center;
+
+
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    background-color: darkorchid;
+    border-radius: 15px;
+
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    font-family: monospace;
+}
+.butt:hover {
+    background-color: purple;
+    color: white;
+}
+
+
+
+#lineBetween {
+    width: 100%;
+    height: 6vh;
+    
+    background-color: darkorchid;
+
+    font-family: monospace;
+}
+
+
+
+
+#frame1 {
+    background-image: url(../img/f1background.png);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgb(50, 49, 49);
+}
+.f1Box {
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+
+    margin: auto;
+    margin-top: 5%;
+    margin-left: 5%;
+
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    border-radius: 20px;
+
+}
+.f1Box h1 {
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    width: 100%;
+
+    font-size: calc(14px + 1.5vw);
+    font-weight: bold;
+}
+.f1Box h3 {
+    margin: auto;
+    margin-bottom: 5%;
+}
+.f1Box a {
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+#f1Row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.counterBox {
+    display: flex;
+    width: 60%;
+
+    flex-direction: column;
+
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+
+
+}
+#counterTitle {
+    font-size: 5vh;
+    text-align: center;
+
+    width: 35vw;
+
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    color: darkorchid;
+
+    
+}
+#counterTimer {
+    display: flex;
+    
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    width: inherit;
+    height: 15vh;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+}
+#counterTimer h4 {
+    font-size: calc(12px + 2vw);
+}
+
+.counterNameBox {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2%;
+
+    align-items: center;
+    margin: 2%;
+}
+.counterNameBox h1 {
+    height: fit-content;
+    font-size: calc(12px + 1vw);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.counterNameBox p {
+    font-size: calc(12px + 1vw);
+
+    margin: auto;
+}
+
+
+@media (max-width: 800px) {
+    #frame1 {
+        flex-direction: column;
+
+        height: 120vh;
+    }
+
+    .f1Box {
+        width: 85vw;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .counterBox {
+        width: 85vw;
+        margin-top: 6vh;
+    }
+    #counterTitle {
+        width: 85vw;
+
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    #counterTimer {
+        width: 85vw;
+
+        justify-content: center;
+
+        margin: 0;
+        margin-top: 12px;
+    }
+    #f1Row {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+#frame2 {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    grid-template-columns: 30% 70%;
+    
+    width: 100%;
+    height: 120vh;
+
+    background-image: url(../img/ArtistsBackground.png);
+
+    font-weight: bold;
+
+    
+}
+
+.f2TitleBox {
+    display: flex;
+    flex-direction: column;
+
+    width: 85%;
+    height: 80%;
+
+    margin-top: 12vh;
+    margin-left: 5%;
+
+    padding-left: 5%;
+    padding-right: 4%;
+
+
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+.f2TitleBox h1 {
+    font-size: calc(12px + 4vw);
+
+    width: 90%;
+
+    margin: 0;
+    margin-top: 5%;
+}
+.f2TitleBox p {
+    width: 90%;
+}
+.f2TitleBox a {
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.mainArtistsBox {
+    display: flex;
+
+    width: 95%;
+    height: 80%;
+
+    margin-top: 12vh;
+    margin-left: 3%;
+    
+}
+.mainArtist {
+    display: flex;
+    width: 45%;
+    height: 39;
+
+    padding: 1%;
+    margin: 1%;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+
+    background-position: top;
+    background-size: cover;
+}
+.mainArtist a {
+    font-size: 36px;
+    text-decoration: none;
+    color: purple;
+
+    align-self: flex-end;
+
+    margin-left: 35%;
+}
+
+#m1 {
+    background-image: url(../img/Artists/AlexVane.jpg);
+}
+#m2 {
+    background-image: url(../img/Artists/NovaKay.jpg);
+}
+
+
+
+
+.smallArtistsBox {
+    display: flex;
+
+    grid-column: span 2;
+
+    margin-left: 5%;
+    
+
+    width: 90%;
+    height: 90%;
+}
+.smallArtist {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+
+    width: 95%;
+    height: 90%;
+
+    margin: 2%;
+
+    background-position: top;
+    background-size: cover;
+}
+.smallArtist a {
+    font-size: 22px;
+    text-decoration: none;
+    color: purple;
+
+    align-self: flex-end;
+    margin-left: 35%;
+    margin-bottom: 2%;
+    
+}
+
+#s1 {
+    background-image: url(../img/Artists/Noir.jpg);
+}
+#s2 {
+    background-image: url(../img/Artists/Kairo.jpg);
+}
+#s3 {
+    background-image: url(../img/Artists/Zayro.jpg);
+    background-position: center;
+}
+#s4 {
+    background-image: url(../img/Artists/Elian.jpg);
+}
+
+
+
+@media (max-width: 800px) {
+    #frame2 {
+        display: flex;
+        flex-direction: column;
+
+        height: 150vh;
+    }
+    .mainArtistsBox {
+        margin-top: 5%;
+
+        height: 50vh;
+    }
+    .smallArtistsBox {
+        flex-direction: row;
+
+        height: 30%;
+
+        margin-top: 5%;
+
+        
+    }
+    .f2TitleBox {
+        height: auto;
+    }
+    .smallArtist {
+        background-position: center;
+    }
+    .smallArtist a {
+        font-size: 18px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #s3 {
+        background-position: center;
+    }
+}
+
+
+
+#frame3 {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+
+    background-image: url(../img/raspisanieBackground2.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.f3TitleBox {
+    display: flex;
+    flex-direction: column;
+
+    width: 25%;
+    height: 60%;
+
+    margin-top: 6vh;
+    margin-left: 5%;
+
+    padding-left: 5%;
+    padding-right: 4%;
+
+
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+.scheduleBox {
+    width: 60%;
+    height: 25%;
+
+    margin-top: 6vh;
+    margin-left: 5%;
+}
+
+.buttBox {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5%;
+
+    height: 100%;
+}
+.schButt {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+    border-style: solid;
+    border-color: darkorchid;
+
+
+    font-size: 22px;
+    color: white;
+
+    padding: 1%;
+    margin: auto;
+
+    white-space: nowrap;
+
+    text-decoration: none;
+
+    transition: 0.5s;
+}
+.schButt:hover {
+    background-color: darkorchid;
+}
+.schButt.active {
+    background-color: darkorchid;
+}
+
+#schedule {
+    width: 90%;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+#scheduleList {
+    font-size: 24px;
+}
+
+@media (max-width: 800px) {
+    #frame3 {
+        height: 100vh;
+    }
+    .f3TitleBox {
+        height: 43%;
+    }
+    .scheduleBox {
+        height: 90%;
+    }
+    .buttBox {
+        height: 20%;
+    }
+}
+
+
+/*Artists side*/
+#artistFrame{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 105vh;
+
+    background-image: url(../img/ArtistsBackground.png);
+}
+
+.hdrTitle {
+    margin-left: auto;
+    margin-right: auto;
+
+    color: purple;
+}
+
+#artistButBox {
+    height: 20vh;
+    width: 90%;
+
+    margin-right: auto;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.artistButt {
+    display: flex;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: cover;
+    background-position: top;
+
+    border-radius: 25px;
+    border-style: solid;
+    border-color: darkorchid;
+
+    height: 90%;
+    width: 10%;
+
+
+    font-size: 22px;
+    color: white;
+
+    margin: 1%;
+
+
+    text-decoration: none;
+
+    transition: 0.5s;
+}
+.artistButt p {
+    align-self: flex-end;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.artistButt:hover {
+    background-color: darkorchid;
+    background-image: none;
+}
+
+
+
+#artBut1 {
+    background-image: url(../img/Artists/AlexVane.jpg);
+}
+#artBut2 {
+    background-image: url(../img/Artists/NovaKay.jpg);
+}
+#artBut3 {
+    background-image: url(../img/Artists/Noir.jpg);
+}
+#artBut4 {
+    background-image: url(../img/Artists/Kairo.jpg);
+}
+#artBut5 {
+    background-image: url(../img/Artists/Zayro.jpg);
+    background-position: center;
+}
+#artBut6 {
+    background-image: url(../img/Artists/Elian.jpg);
+}
+
+.artistButt.active {
+    background-color: darkorchid;
+    background-image: none !important;
+}
+
+
+#artInfoBox {
+    display: flex;
+
+    height: 100%;
+
+    margin-left: 5%;
+
+
+}
+
+#artPhoto {
+    width: auto;
+    height: 25%;
+
+    
+
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8);
+    border-width: 15px;
+
+    margin: 2%;
+
+}
+#infoText {
+    width: 45%;
+    height: fit-content;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+
+    padding: 2%;
+
+    margin-top: 2%;
+}
+#infoText h1 {
+    color: purple;
+}
+#infoText p {
+    color: darkslateblue;
+}
+
+@media (max-width: 800px) {
+    #artistFrame {
+        height: 150vh;
+    }
+    .hdrTitle {
+        margin-top: 12vh;
+    }
+    #artInfoBox {
+        flex-direction: column;
+        
+    }
+    #artPhoto {
+        width: 80%;
+        height: auto;
+
+        margin: auto;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    #infoText {
+        width: 80%;
+
+        margin: auto;
+        margin-top: 0;
+    }
+    .artistButt {
+        width: 14%;
+
+    }
+}
+
+
+
+/*Tickets side*/
+#ticketFrame {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(../img/f1background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#tcktButBox {
+    height: 18vh;
+
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.tcktButt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    border-radius: 25px;
+    border-style: solid;
+    border-color: darkorchid;
+
+    height: 90%;
+    width: 20%;
+
+    font-size: 20px;
+    color: white;
+
+    margin: auto;
+}
+.tcktButt:hover {
+    background-color: darkorchid;
+}
+.tcktButt h2 {
+    margin: 0;
+    font-size: 22px;
+}
+.tcktButt p {
+    margin: 2%;
+    color: darkorchid;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.tcktButt.active {
+    background-color: darkorchid;
+}
+.tcktButt.active p {
+    color: black;
+}
+.tcktButt:hover p {
+    color: black;
+}
+
+
+#buyInfoBox {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 2%;
+}
+
+.tcktBox {
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+    height: 45vh;
+
+    margin: auto;
+    margin-top: 2%;
+
+    padding: 2%;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+.tcktBox h1 {
+    color: purple;
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+.tcktBox h2 {
+    color: darkorchid;
+    font-family: monospace;
+    margin-top: 0;
+}
+
+.tcktInput {
+    width: 85%;
+    height: 4vh;
+
+    margin-bottom: 3%;
+    padding-left: 2%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    border-style: solid;
+    border-color: darkorchid;
+    border-radius: 15px;
+
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+#buyNowButt {
+    margin-top: auto;
+}
+
+@media (max-width: 800px) {
+    #ticketFrame {
+        flex-direction: column;
+        height: 150vh;
+    }
+    #tcktButBox {
+        flex-direction: column;
+        height: 35vh;
+    }
+    .tcktButt {
+        width: 85vw;
+        height: 20%;
+    }
+    #buyInfoBox {
+        flex-direction: column;
+    }
+    .tcktBox {
+        width: 85vw;
+        height: auto;
+    }
+}
+
+
+
+/*Menu*/
+#menuOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 100;
+}
+#menuOverlay.open {
+    display: flex;
+}
+
+#menuBox {
+    display: flex;
+    flex-direction: column;
+
+    width: 35vw;
+    height: 60vh;
+
+    margin: auto;
+    padding: 3%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    border-color: darkorchid;
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+#closeMenuButt {
+    align-self: flex-end;
+
+    font-size: 28px;
+    font-family: monospace;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkorchid;
+}
+
+.menuLink {
+    margin: auto;
+
+    font-size: calc(18px + 1.5vw);
+    font-family: cursive;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+
+    transition: 0.3s;
+}
+.menuLink:hover {
+    color: darkorchid;
+}
+
+
+/*FAQ side*/
+#faqFrame {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-height: 100vh;
+
+    padding-bottom: 6vh;
+
+    background-image: url(../img/f1background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#faqListBox {
+    display: flex;
+    flex-direction: column;
+
+    width: 75%;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.faqItem {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 2%;
+    padding: 2%;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    border-style: solid;
+    border-color: darkorchid;
+    border-radius: 20px;
+}
+
+.faqQuest {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+
+    text-align: left;
+    font-family: cursive;
+    font-size: calc(14px + 0.8vw);
+    font-weight: bold;
+    color: purple;
+
+    cursor: pointer;
+}
+
+.faqAns {
+    display: none;
+    margin-top: 2%;
+    margin-bottom: 0;
+
+    font-size: 18px;
+    color: white;
+}
+.faqItem.active .faqAns {
+    display: block;
+}
+
+
+
+@media (max-width: 800px) {
+    #menuBox {
+        width: 80vw;
+        height: 65vh;
+    }
+    #faqListBox {
+        width: 88vw;
+    }
+    #faqFrame .hdrTitle {
+        margin-top: 12vh;
+    }
+}
+
+
+
+.ftr {
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    width: 100%;
+    height: 50vh;
+}
+
+#ftrBox {
+    display: flex;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    justify-content: space-between;
+}
+.ftrItem {
+    width: 20vw;
+    height: auto;
+}
+.ftrItem p {
+    overflow-wrap: break-word;
+}
+
+#stroke {
+    width: 85vw;
+    height: 1px;
+    background-color: white;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+#ftrUnderBox {
+    display: flex;
+    
+}
+
+#ftrLogo {
+    width: 30px;
+    height: auto;
+    margin-left: 2vw;
+    margin-right: 2vw;
+
+    fill: white;
+    color: white;
+}
+#ftrFaqLink {
+    margin-left: auto;
+    margin-right: 8vw;
+
+    font-size: 24px;
+    font-family: monospace;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
