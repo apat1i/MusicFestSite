@@ -911,7 +911,7 @@
     margin: auto;
 
     font-size: calc(18px + 1.5vw);
-    font-family: cursive;
+    font-family: monospace;
     font-weight: bold;
     text-decoration: none;
     color: white;
